@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!-- Font-Awesome -->
+	<script src="https://use.fontawesome.com/0856ab4841.js"></script>
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600" rel="stylesheet">
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="style.css">
+	<title>FCC Survey Form</title>
+</head>
+  <body>
+    <h1 id="title" class="title">Survey Form</h1>
+    <div class="form-container">
+      <p id="description" class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <!-- 	Form -->
+      <form id="survey-form">
+
+        <!-- Name -->
+        <div class="input-group">
+          <!-- 	INPUT		 -->
+          <input type="text" class="form-input" id="name" name="name" placeholder="Full Name" required>
+          <!-- 	LABEL		 -->
+          <label id="name-label" class="form-label" for="name">Full Name</label>
+        </div> <!-- End input group Name -->
+
+        <!-- Email Address-->
+        <div class="input-group">
+          <!-- 	INPUT		 -->
+          <input type="email" class="form-input" id="email" name="email" placeholder="Email Address" required>
+          <!-- 	LABEL		 -->
+          <label id="email-label" class="form-label" for="email" >Email Address</label>
+        </div> <!-- End input group Email-->
+
+        <!-- Age-->
+        <div class="input-group">
+          <!-- 	INPUT		 -->
+          <input type="number" class="form-input" id="number" name="age" min="16" max="125" placeholder="Age">
+          <!-- 	LABEL		 -->
+          <label id="number-label" class="form-label" for="age">Age</label>
+        </div> <!-- End input group Age-->
+
+        <!-- Drop Down-->
+        <div class="input-group">
+          <!-- 	INPUT		 -->
+          <select id="dropdown" class="form-input drop-down" name="currentPos">
+            <option disabled value>Select an option</option>
+            <option value="job">Work Full Time</option>
+            <option value="learner">Work Part Time</option>
+            <option value="learner">Full Time Education</option>
+            <option value="learner">Part Time Education</option>
+            <option value="preferNo">Prefer not to say</option>
+            <option value="other">Other</option>
+          </select>
+          <!-- 	LABEL		 -->
+          <label class="form-label" for="currentPos">Lorem ipsum dolor sit?</label>
+        </div> <!-- End Drop Down-->
+
+          <!-- Radio Buttons-->
+          <div class="input-group">
+            <!-- 	LABEL		 -->
+            <label class="radio-label form-label order-above" for="userRating">Lorem ipsum dolor sit amet, elit?</label>
+            <!-- 	INPUT		 -->
+            <ul>
+              <li class="radio">
+                <!-- 	INPUT		 -->
+                <input class="radio-input" name="radio-buttons" value="1" type="radio" class="userRatings">
+                <!-- 	LABEL		 -->
+                <label>Definitely</label>
+              </li>
+              <li class="radio">
+                <!-- 	INPUT		 -->
+                <input class="radio-input" name="radio-buttons" value="2"  type="radio" class="userRatings">
+                <!-- 	LABEL		 -->
+                <label>Maybe</label>
+              </li>
+              <li class="radio">
+                <!-- 	INPUT		 -->
+                <input class="radio-input" name="radio-buttons" value="3"  type="radio" class="userRatings">
+                <!-- 	LABEL		 -->
+                <label>Not sure</label>
+              </li>
+            </ul>
+          </div> <!-- End Radio Buttons-->
+
+          <!-- Check Box-->
+          <div class="input-group">
+            <!-- 	LABEL Check box		 -->
+            <label class="form-label checkbox-label" for="preferences">Things that should be improved in the future<br>(Check all that apply): </label>
+            <!-- 	INPUT		 -->
+            <ul id="preferences">
+              <li class="checkbox">
+                <input class="checkbox-input" name="prefer" value="1" type="checkbox" class="userRatings">
+                <label>Lorem ipsum</label>
+              </li>
+              <li class="checkbox">
+                <input class="checkbox-input" name="prefer" value="2" type="checkbox" class="userRatings">
+                <label>Lorem ipsum</label>
+              </li>
+              <li class="checkbox">
+                <input class="checkbox-input" name="prefer" value="3" type="checkbox" class="userRatings">
+                <label>Lorem ipsum</label>
+              </li>
+              <li class="checkbox">
+                <input class="checkbox-input" name="prefer" value="4" type="checkbox" class="userRatings">
+                <label>Lorem ipsum</label>
+              </li>
+              <li class="checkbox">
+                <input class="checkbox-input" name="prefer" value="5" type="checkbox" class="userRatings">
+                <label>Lorem ipsum</label>
+              </li>
+            </ul>
+          </div> <!-- End Checkbox-->
+
+          <!-- Text Inout-->
+          <div class="input-group-text input-group">
+            <!-- 	LABEL		 -->
+            <label class="comment-label" for="comments">Any Comments or Suggestions?</label>
+            <!-- 	INPUT		 -->
+            <textarea id="comments" class="input-text" style="height:50px;resize:vertical;" name="comment" placeholder="Enter your comment here..."></textarea>
+          </div> <!-- End Text Box->
+
+          <!-- 	SUBMIT BUTTON		 -->
+          <button id="submit" class="submit" type="submit">Submit</button>
+      </form> <!-- Form END -->
+    </div> <!-- Form-container END -->
+  </body>
+</html>
+

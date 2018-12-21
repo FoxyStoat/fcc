@@ -1,0 +1,165 @@
+/*----------------------------------
+Global Stlyes
+------------------------------------*/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* border box fix */
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Titillium Web", "Open Sans", sans-serif;
+	/*one Em roughly ten pixels (16 x 62.5% = 10)*/
+	font-size: 62.5%;
+	letter-spacing: 1.6px;
+	margin: 0;
+	text-align: center;
+}
+
+/*  Title */
+.title {
+	font-size: 3.3em;
+	margin: 1em;
+	font-weight: 600;
+	word-spacing: 2px;
+}
+
+.description {
+	font-size: 1.5em;
+	font-style: italic;
+	margin: 0.7em auto 1.2em;
+}
+
+/*----------------------------------
+Form Container
+------------------------------------*/
+
+.form-container {
+	border: 1px solid #ddd;
+	border-radius: 0.8em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0 auto;
+	max-width: 90em;
+	padding: 2em;
+	box-shadow: 7px 7px 7px #ddd;
+}
+
+.input-group {
+	display: flex;
+	padding: 0.5em;
+	font-size: 1.6em;
+	margin: 1em;
+}
+
+.form-input {
+	min-width: 15em;
+	padding: 0.4em;
+}
+
+.form-label {
+	display: flex;
+	align-items: center;
+	margin-left: 1.5em;
+	font-weight: bold;
+}
+
+/*----------------------------------
+RADIO AND CHECKBOX
+------------------------------------*/
+.radio,
+.checkbox {
+	display: flex;
+	min-width: 12.6em;
+	padding: 0.2em;
+	justify-content: space-between;
+}
+
+.radio-input,
+.checkbox-input {
+	align-self: center;
+	order: 2;
+}
+
+.radio-label,
+.checkbox-label{
+	order: 1;
+}
+
+ul {
+	list-style: none;
+}
+
+/*----------------------------------
+INPUT TEXT FIELD
+------------------------------------*/
+.input-group-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.comment-label {
+	font-weight: bold;
+}
+
+/*----------------------------------
+SUBMIT BUTTON
+------------------------------------*/
+
+.submit {
+	background-color: #59ace0;
+  border-radius: 4px;
+  color: white;
+  font-size: 1.8em;
+	padding: 0.8em;
+  width: 7em;
+  margin: 1em;
+  border: 0px solid;
+	box-shadow: 5px 5px 5px #ddd;
+}
+
+/*----------------------------------
+Media Queries
+------------------------------------*/
+
+/*----------------------------------
+Tablets
+------------------------------------*/
+@media screen and (max-width: 700px) {
+
+	.title {
+		font-size: 2.5em;
+	}
+
+	.input-group {
+		flex-direction: column;
+	}
+
+	.form-input {
+		order: 1;
+	}
+
+	.form-label {
+		margin-left: 0;
+		padding-bottom: 0.5em;
+	}
+
+	.order-above {
+		order: 0;
+	}
+
+	.checkbox-label {
+		order: 0;
+	}
+}
