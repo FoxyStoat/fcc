@@ -1,3 +1,32 @@
+/*----------------------------------
+Global Stlyes
+------------------------------------*/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* border box fix */
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+body {
+  /* font-family: 'Josefin Slab', serif; */
+  /* font-family: 'Amatic SC', cursive; */
+	font-family: "Josefin Slab", serif;
+	/*one Em roughly ten pixels (16 x 62.5% = 10)*/
+	font-size: 62.5%;
+	letter-spacing: 1.5px;
+	margin: 0;
+}
+
 .logo {
   width: 60px;
 }
