@@ -27,6 +27,32 @@ body {
 	margin: 0;
 }
 
+/*----------------------------------
+HEADER AND NAVIGATION
+------------------------------------*/
+
 .logo {
-  width: 60px;
+  width: 2.7em;
+}
+
+.header {
+  background-color: #000;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-item a {
+  font-family: "Amatic SC", cursive;
+  text-decoration: none;
+	text-transform: uppercase;
+	font-size: 2em;
+	padding: 1em;
+	cursor: pointer;
+  font-weight: bold;
+  color: #fff;
 }
