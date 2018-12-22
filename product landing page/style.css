@@ -33,6 +33,13 @@ HEADER AND NAVIGATION
 
 .logo {
   width: 2.7em;
+  animation: spin 2s infinite;
+}
+
+@keyframes spin {
+	100% {
+		transform: rotate(360deg);
+	}
 }
 
 .header {
