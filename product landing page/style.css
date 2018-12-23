@@ -35,6 +35,12 @@ body {
 	margin: 6em auto;
 	text-align: center;
 	max-width: 60%;
+	height: 100vh;
+}
+
+.text {
+	margin-top: 1.5em;
+	font-size: 2.3em;
 }
 
 /*----------------------------------
@@ -42,7 +48,7 @@ HEADER AND NAVIGATION
 ------------------------------------*/
 
 .logo {
-  width: 6em;
+  width: 5.5em;
   animation: spin 2s infinite;
 }
 
@@ -61,14 +67,14 @@ HEADER AND NAVIGATION
   justify-content: space-between;
   align-items: center;
   list-style: none;
-  padding: 1.5em;
+  padding: 0.5em;
 }
 
 .brand-name a,
 .nav-link a {
   text-decoration: none;
 	text-transform: uppercase;
-	font-size: 1.8em;
+	font-size: 1.7em;
   padding: 1em;
 	cursor: pointer;
 	color: #fff;
@@ -130,7 +136,7 @@ h1 {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 3.8em;
+  font-size: 3em;
   color: #fff;
   animation: MoveUpDown 1s linear infinite;
 }
@@ -152,7 +158,8 @@ h1 {
 ABOUT SECTION
 ------------------------------------*/
 
-.span-about {
+.span-about,
+.span-gallery {
 	color: #df744a;
 	font-weight: 700;
 }
@@ -178,11 +185,38 @@ h2:after {
 	height: 20em;
 }
 
-.about-text {
-	margin-top: 1.5em;
-	font-size: 2.3em;
-}
-
 #video {
 	margin-top: 5em;
+}
+
+/*----------------------------------
+GALLERY SECTION
+------------------------------------*/
+
+.section-gallery {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+p > a {
+	text-decoration: none;
+	font-weight: 700;
+	color: #df744a;
+}
+
+.gallery-img {
+	max-width: 28em;
+	padding: 1em;
+}
+
+.figcaption-gallery {
+	font-size: 1.8em;
+}
+
+.text-gallery {
+	margin-bottom: 3em;
 }
