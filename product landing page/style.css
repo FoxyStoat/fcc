@@ -55,7 +55,7 @@ HEADER AND NAVIGATION
 }
 
 .brand-name a,
-.nav-item a {
+.nav-link a {
   font-family: "Amatic SC", "Josefin Slab", serif;
   text-decoration: none;
 	text-transform: uppercase;
@@ -71,14 +71,29 @@ HEADER AND NAVIGATION
   padding: 0;
 }
 
+.hero-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
 /*
 Header-image
 Photo by julian mora on Unsplash
 */
 .header-img {
-	background: url(images/yarn1.jpg) no-repeat fixed;
+	background: linear-gradient(rgba(0, 0, 0,0.4), rgba(0, 0, 0,0.4)),url(images/yarn1.jpg) no-repeat fixed;
 	background-size: cover;
 	background-position: top center;
 	height: 70vh;
 	width: 100%;
+}
+
+.hero-text-box {
+	font-family: "Amatic SC", "Josefin Slab", serif;
+	font-size: 3em;
+	color: #fff;
+	max-width: 44%;
 }
