@@ -126,7 +126,7 @@ HEADER AND NAVIGATION
 
 .brand-name a:hover,
 .nav-link a:hover {
-	color: #dcb239;
+	color: #df744a;
 }
 
 .brand-name a {
@@ -162,8 +162,7 @@ Photo by julian mora on Unsplash
 }
 
 .btn {
-	background-color: #59ace0;
-	/* background-color: #f6ac0b; */
+	background-color: #df744a;
   border-radius: 8px;
   color: #fff;
   font-size: 1em;
