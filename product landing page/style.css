@@ -174,11 +174,24 @@ Photo by julian mora on Unsplash
 	box-shadow: 5px 5px 5px rgba(0, 0, 0,0.5);
 }
 
+#hero-btn {
+	background-color: #df744a;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 2em;
+	padding: 0.8em;
+  margin-top: 2em;
+  border: 0;
+	cursor: pointer;
+  border: 0;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0,0.5);
+}
+
 .scroll-down {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 3em;
+  font-size: 4em;
   color: #fff;
   animation: MoveUpDown 1s linear infinite;
 }
