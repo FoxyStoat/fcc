@@ -24,6 +24,17 @@ body {
 	letter-spacing: 1.5px;
 	margin: 0;
 	font-weight: 300;
+	color: rgb(85, 85, 85);
+}
+
+.section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 6em auto;
+	text-align: center;
+	max-width: 60%;
 }
 
 /*----------------------------------
@@ -50,7 +61,7 @@ HEADER AND NAVIGATION
   justify-content: space-between;
   align-items: center;
   list-style: none;
-  padding: 2em;
+  padding: 1.5em;
 }
 
 .brand-name a,
@@ -58,13 +69,13 @@ HEADER AND NAVIGATION
   text-decoration: none;
 	text-transform: uppercase;
 	font-size: 1.8em;
-  padding: 1.5em;
+  padding: 1em;
 	cursor: pointer;
 	color: #fff;
 }
 
 .brand-name a {
-  font-size: 2.5em;
+  font-size: 2.3em;
 	padding: 0;
 	font-style: italic;
 }
@@ -85,7 +96,7 @@ Photo by julian mora on Unsplash
 	background: linear-gradient(rgba(0, 0, 0,0.4), rgba(0, 0, 0,0.4)),url(images/yarn1.jpg) no-repeat fixed;
 	background-size: cover;
 	background-position: top center;
-	height: 80vh;
+	height: 100vh;
 	width: 100%;
 }
 
@@ -99,6 +110,7 @@ h1 {
 	font-size: 4em;
 	font-weight: 300;
 	word-spacing: 3px;
+	letter-spacing: 4px;
 }
 
 .btn {
@@ -112,4 +124,38 @@ h1 {
   border: 0;
 	/* box-shadow: 3px 3px 3px #000; */
 	cursor: pointer;
+}
+
+/*----------------------------------
+ABOUT SECTION
+------------------------------------*/
+
+.span-about {
+	color: #df744a;
+	font-weight: 700;
+}
+
+h2 {
+	font-size: 2.5em;
+	padding: 1em;
+}
+
+h2:after {
+	content: "";
+	display: block;
+	width: 10em;
+	height: 3px;
+	background-color: #df744a;
+	margin: 0 auto;
+	margin-top: 1.5em;
+}
+
+.about-image {
+	border-radius: 50%;
+	height: 20em;
+}
+
+.about-text {
+	margin-top: 3em;
+	font-size: 2.3em;
 }
