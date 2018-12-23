@@ -168,10 +168,11 @@ Photo by julian mora on Unsplash
   color: #fff;
   font-size: 1em;
 	padding: 0.8em;
-  margin-top: 1em;
+  margin: 2em;
   border: 0;
-	/* box-shadow: 3px 3px 3px #000; */
 	cursor: pointer;
+  border: 0;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0,0.5);
 }
 
 .scroll-down {
@@ -255,7 +256,7 @@ SHOP SECTION
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	padding: 1em 5em 5em;
+	padding: 1em 5em 5em 2em;
 }
 
 .visit-shops a {
