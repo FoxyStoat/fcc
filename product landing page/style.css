@@ -32,7 +32,7 @@ HEADER AND NAVIGATION
 ------------------------------------*/
 
 .logo {
-  width: 6em;
+  width: 5em;
   animation: spin 2s infinite;
 }
 
@@ -51,6 +51,7 @@ HEADER AND NAVIGATION
   justify-content: space-between;
   align-items: center;
   list-style: none;
+  padding: 2em;
 }
 
 .brand-name a,
@@ -59,7 +60,7 @@ HEADER AND NAVIGATION
   text-decoration: none;
 	text-transform: uppercase;
 	font-size: 2.6em;
-	padding: 1em;
+  padding: 1.5em;
 	cursor: pointer;
   color: #fff;
 }
@@ -67,4 +68,17 @@ HEADER AND NAVIGATION
 .brand-name a {
   font-size: 3.6em;
   font-weight: bold;
+  padding: 0;
+}
+
+/*
+Header-image
+Photo by julian mora on Unsplash
+*/
+.header-img {
+	background: url(images/yarn1.jpg) no-repeat fixed;
+	background-size: cover;
+	background-position: top center;
+	height: 70vh;
+	width: 100%;
 }
