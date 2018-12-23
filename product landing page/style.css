@@ -27,6 +27,17 @@ body {
 	color: rgb(85, 85, 85);
 }
 
+a:link {
+	color: #df744a;
+	text-decoration: none;
+}
+
+a:hover,
+a:active,
+a:visited {
+	color: #df744a;
+}
+
 .section {
 	display: flex;
 	flex-direction: column;
@@ -35,12 +46,45 @@ body {
 	margin: 6em auto;
 	text-align: center;
 	max-width: 60%;
-	height: 100vh;
+	/* height: 100vh; */
 }
 
 .text {
-	margin-top: 1.5em;
+	margin: 1.5em 0;
 	font-size: 2.3em;
+}
+
+/*----------------------------------
+Headings
+------------------------------------*/
+
+h1,
+h2,
+h3 {
+	font-size: 4em;
+	font-weight: 300;
+	word-spacing: 3px;
+	letter-spacing: 4px;
+}
+
+h2 {
+	color: #df744a;
+	font-size: 3em;
+	padding: 1em;
+}
+
+h2:after {
+	content: "";
+	display: block;
+	width: 10em;
+	height: 2px;
+	background-color: #df744a;
+	margin: 0 auto;
+	margin-top: 1em;
+}
+
+h3{
+	font-size: 3em;
 }
 
 /*----------------------------------
@@ -64,7 +108,7 @@ HEADER AND NAVIGATION
 
 .main-nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   list-style: none;
   padding: 0.5em;
@@ -78,6 +122,11 @@ HEADER AND NAVIGATION
   padding: 1em;
 	cursor: pointer;
 	color: #fff;
+}
+
+.brand-name a:hover,
+.nav-link a:hover {
+	color: #dcb239;
 }
 
 .brand-name a {
@@ -110,13 +159,6 @@ Photo by julian mora on Unsplash
 	font-size: 2em;
 	color: #fff;
 	max-width: 44%;
-}
-
-h1 {
-	font-size: 4em;
-	font-weight: 300;
-	word-spacing: 3px;
-	letter-spacing: 4px;
 }
 
 .btn {
@@ -164,22 +206,6 @@ ABOUT SECTION
 	font-weight: 700;
 }
 
-h2 {
-	color: #df744a;
-	font-size: 3em;
-	padding: 1em;
-}
-
-h2:after {
-	content: "";
-	display: block;
-	width: 10em;
-	height: 2px;
-	background-color: #df744a;
-	margin: 0 auto;
-	margin-top: 1em;
-}
-
 .about-image {
 	border-radius: 50%;
 	height: 20em;
@@ -217,6 +243,42 @@ p > a {
 	font-size: 1.8em;
 }
 
-.text-gallery {
-	margin-bottom: 3em;
+/*----------------------------------
+Footer
+------------------------------------*/
+.footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	background: #111;
+	color: #fff;
+	padding: 1em;
+	position: relative;
+	text-align: center;
+}
+
+.footer-links {
+	margin: 1em auto;
+}
+
+.footer-links a {
+	font-size: 2em;
+	padding: 1em;
+	color: #dcb239;
+}
+
+.footer-paragraphs {
+	font-size: 1.7em;
+	margin-bottom: 0.5em;
+}
+
+#back-to-top {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+#back-to-top a {
+  color: #dcb239;
 }
