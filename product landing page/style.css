@@ -18,13 +18,12 @@ html {
 }
 
 body {
-  /* font-family: 'Josefin Slab', serif; */
-  /* font-family: 'Amatic SC', cursive; */
-	font-family: "Josefin Slab", serif;
+	font-family: 'Open Sans Condensed', sans-serif;
 	/*one Em roughly ten pixels (16 x 62.5% = 10)*/
 	font-size: 62.5%;
 	letter-spacing: 1.5px;
 	margin: 0;
+	font-weight: 300;
 }
 
 /*----------------------------------
@@ -32,7 +31,7 @@ HEADER AND NAVIGATION
 ------------------------------------*/
 
 .logo {
-  width: 5em;
+  width: 6em;
   animation: spin 2s infinite;
 }
 
@@ -56,19 +55,18 @@ HEADER AND NAVIGATION
 
 .brand-name a,
 .nav-link a {
-  font-family: "Amatic SC", "Josefin Slab", serif;
   text-decoration: none;
 	text-transform: uppercase;
-	font-size: 2.6em;
+	font-size: 1.8em;
   padding: 1.5em;
 	cursor: pointer;
-  color: #fff;
+	color: #fff;
 }
 
 .brand-name a {
-  font-size: 3.6em;
-  font-weight: bold;
-  padding: 0;
+  font-size: 2.5em;
+	padding: 0;
+	font-style: italic;
 }
 
 .hero-container {
@@ -87,13 +85,31 @@ Photo by julian mora on Unsplash
 	background: linear-gradient(rgba(0, 0, 0,0.4), rgba(0, 0, 0,0.4)),url(images/yarn1.jpg) no-repeat fixed;
 	background-size: cover;
 	background-position: top center;
-	height: 70vh;
+	height: 80vh;
 	width: 100%;
 }
 
 .hero-text-box {
-	font-family: "Amatic SC", "Josefin Slab", serif;
-	font-size: 3em;
+	font-size: 2em;
 	color: #fff;
 	max-width: 44%;
+}
+
+h1 {
+	font-size: 4em;
+	font-weight: 300;
+	word-spacing: 3px;
+}
+
+.btn {
+	background-color: #59ace0;
+	/* background-color: #f6ac0b; */
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1em;
+	padding: 0.8em;
+  margin-top: 1em;
+  border: 0;
+	/* box-shadow: 3px 3px 3px #000; */
+	cursor: pointer;
 }
