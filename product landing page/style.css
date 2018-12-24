@@ -90,6 +90,9 @@ h3{
 /*----------------------------------
 HEADER AND NAVIGATION
 ------------------------------------*/
+.header {
+	width: 100%;
+}
 
 .logo {
   width: 5.5em;
@@ -158,7 +161,7 @@ Photo by julian mora on Unsplash
 .hero-text-box {
 	font-size: 2em;
 	color: #fff;
-	max-width: 44%;
+	max-width: 60%;
 }
 
 .btn {
@@ -262,13 +265,14 @@ SHOP SECTION
 .section-shop {
 	background-color: #fedcd2;
 	text-align: center;
+	padding: 3em;
 }
 
 .visit-shops {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	padding: 1em 5em 5em 2em;
+	padding: 4em;
 }
 
 .visit-shops a {
@@ -306,7 +310,7 @@ Contact Form
 	flex-direction: column;
 	align-items: center;
 	margin: 0 auto;
-	max-width: 50em;
+	min-width: 50em;
 	padding: 2em;
 	box-shadow: 7px 7px 7px #ddd;
 }
@@ -392,4 +396,121 @@ Footer
 
 #back-to-top a {
   color: #df744a;
+}
+
+/*----------------------------------
+Media Queries
+------------------------------------*/
+
+/*----------------------------------
+Tablets
+------------------------------------*/
+
+@media screen and (max-width: 830px) {
+	/* Headings */
+	h1,
+	h2,
+	h3 {
+		font-size: 2.5em;
+		font-weight: 300;
+		word-spacing: 3px;
+		letter-spacing: 4px;
+	}
+
+	h2 {
+		font-size: 2em;
+	}
+
+	h3{
+		font-size: 2em;
+	}
+
+	.section {
+		margin: 4em auto;
+		max-width: 100%;
+		padding: 3em;
+	}
+
+	.text {
+		margin: 1.5em 0;
+		font-size: 1.8em;
+	}
+
+		/* Header */
+	.logo {
+		width: 4em;
+	}
+
+	/* Nav */
+	.brand-name a,
+	.nav-link a {
+		font-size: 1.5em;
+	}
+
+	.brand-name a {
+		font-size: 1.8em;
+	}
+
+	.hero-text-box {
+		font-size: 1.8em;
+		max-width: 100%;
+	}
+
+	#hero-btn {
+		font-size: 1.6em;
+	}
+
+	.scroll-down {
+		font-size: 3em;
+	}
+
+	/* About Section */
+	.about-image {
+		height: 13em;
+	}
+
+	#video {
+		width: 50em;
+	}
+
+	/* Gallery Section */
+	.section-gallery {
+		margin: 3em auto;
+		text-align: center;
+		width: 100%;
+	}
+
+	/* Shop Section */
+	.visit-shops {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.etsy {
+		max-width: 80%;
+		margin-bottom: 4em;
+	}
+
+	.you-tube {
+		max-width: 80%;
+		margin-bottom: 4em;
+	}
+
+	.visit-shops a {
+		font-size: 1.5em;
+	}
+
+	.etsy i,
+	.you-tube i {
+		color: #df744a;
+		font-size: 1.2em;
+	}
+
+	.etsy i {
+		font-size: 1em;
+	}
+
+	#back-to-top i {
+		font-size: 2.3em;
+	}
 }
