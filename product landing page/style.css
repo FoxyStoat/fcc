@@ -68,7 +68,7 @@ h3 {
 }
 
 h1 {
-	font-size: 3.8em;
+	font-size: 3.6em;
 }
 
 h2 {
@@ -102,7 +102,7 @@ HEADER AND NAVIGATION
 	font-size: 1.6em;
 	background-color: #000;
 	border: 1px solid rgba(0, 0, 0, 0.2);
-	padding-bottom: 2em;
+	padding-bottom: 1.2em;
 	position: fixed;
 	z-index: 10;
 	width: 100%;
@@ -196,7 +196,7 @@ Photo by julian mora on Unsplash
 .hero-text-box {
 	font-size: 2em;
 	color: #fff;
-	max-width: 60%;
+	padding: 2em;
 }
 
 .btn {
@@ -213,18 +213,20 @@ Photo by julian mora on Unsplash
 }
 
 #hero-btn {
+	display: inline-block;
 	background-color: #df744a;
   border-radius: 8px;
   color: #fff;
   font-size: 1.8em;
 	padding: 0.8em;
-  margin-top: 2em;
+  margin: 2.5em;
   border: 0;
 	cursor: pointer;
 	box-shadow: 5px 5px 5px rgba(0, 0, 0,0.5);
 }
 
 .scroll-down {
+	display: inline-block;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -495,6 +497,10 @@ Desktops
 		padding: 4em;
 	}
 
+	.nav-link a {
+		font-size: 1.7em;
+	}
+
 	#video {
 		height: 40em;
 		width: 70em;
@@ -502,6 +508,10 @@ Desktops
 
 	.text {
 		font-size: 2.5em;
+	}
+
+	.hero-paragrapgh {
+		font-size: 1.3em;
 	}
 
 	h1 {
@@ -516,13 +526,21 @@ Desktops
 		font-size: 3em;
 	}
 
+	.logo {
+		font-size: 1.7em;
+	}
+
 	/* SECTION GALLERY */
 	.section-gallery {
-		width: 80%;
+		width: 75%;
 	}
 
 	.gallery-img {
 		max-width: 34em;
+	}
+
+	.figcaption-gallery {
+		font-size: 1.9em;
 	}
 
 	/* SHOP SECTION */
@@ -562,15 +580,33 @@ Desktops
 	/* Submit Button */
 	.submit {
 		font-size: 2em;
+		padding: 1em;
+	}
+
+	.btn {
+		font-size: 1.2em;
+		padding: 1em;
+	}
+
+	#hero-btn {
+		font-size: 2.1em;
+		padding: 1em;
+	}
+
+	.form-label {
+		font-size: 1.4em;
 	}
 
 	/* FOOTER */
-
 	.footer-links a {
-		font-size: 2em;
+		font-size: 2.2em;
 	}
 
 	#back-to-top i {
 		font-size: 3.5em;
+	}
+
+	.footer-paragraphs {
+		font-size: 1.8em;
 	}
 }
