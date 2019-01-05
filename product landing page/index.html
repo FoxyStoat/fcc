@@ -14,11 +14,17 @@
 </head>
   <body>
 		<header id="header" class="header">
-
 			<nav id="nav-bar" class="navbar">
-				<ul class="main-nav">
-					<li class="brand-name"><img class="logo" src="images/spin-me-a-yarn-logo.svg" alt="logo"><a href="#">Spin Me A Yarn</a></li>
-					<!-- <li class="nav-item"><a href="#home">HOME</a></li> -->
+				<!-- Mobile Navigation -->
+				<span class="navbar-toggle" id="js-navbar-toggle">
+          <i class="fa fa-bars icon" title="mobile navigation toggle"> Menu</i>
+        </span>
+				<!-- Logo -->
+				<div class="brand">
+					<img class="img-logo" src="images/spin-me-a-yarn-logo.svg" alt="logo">
+					<a href="#" class="logo"> Spin Me A Yarn</a>
+				</div>
+				<ul id="js-menu" class="main-nav">
 					<li class="nav-link"><a href="#about">ABOUT</a></li>
 					<li class="nav-link"><a href="#gallery">GALLERY</a></li>
 					<li class="nav-link"><a href="#shop">SHOP</a></li>
@@ -38,7 +44,7 @@
 			<a href="#main"><i class="fa fa-angle-down scroll-down"></i></a>
 		</header>
 
-		<main id="main" class="main"></main>
+		<main id="main" class="main">
 			<!-- About Section -->
 			<section id="about" class="section section-about">
 				<img class="about-image" src="images/sheep.jpg" alt="image of sheep" height="200">
@@ -50,8 +56,9 @@
 
 			<!-- Gallery Section -->
 			<section id="gallery" class="section section-gallery">
-					<h2>Gallery</h2>
-					<p class="text text-gallery">Here are some of my creations I have knitted.  If any of them take your fancy they are available to buy from my <a href="https://www.etsy.com" target="_blank"> esty store</a>.</p>
+				<h2>Gallery</h2>
+				<p class="text text-gallery">Here are some of my creations I have knitted.  If any of them take your fancy they are available to buy from my <a href="https://www.etsy.com" target="_blank"> esty store</a>.</p>
+				<div class="gallery">
 					<!-- Product 1 -->
 					<figure class="figure-container">
 						<img class="gallery-img" src="images/product1 (3).jpg">
@@ -108,11 +115,12 @@
 							<p>Lorem ipsum</p>
 						</figcaption>
 					</figure>
+				</div>
 			</section> <!-- End Of Gallery Section -->
 
 			<!-- Shop Section -->
 			<section id="shop" class="section-shop">
-					<h2>Where To Find Me</h2>
+				<h2>Where To Find Me</h2>
 				<div class="visit-shops">
 					<!-- Etsy -->
 					<div class="etsy">
@@ -215,5 +223,6 @@
 				<a href="#"><i class="fa fa-arrow-up fa-4x" aria-hidden="true"></i></a>
 			</div>
 		</footer>
+		<script src="scripts.js"></script>
   </body>
 </html>
