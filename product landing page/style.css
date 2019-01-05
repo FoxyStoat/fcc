@@ -45,12 +45,13 @@ a:visited {
 	align-items: center;
 	margin: 6em auto;
 	text-align: center;
-	max-width: 60%;
+	width: 100%;
+	padding: 2em;
 }
 
 .text {
 	margin: 1.5em 0;
-	font-size: 2.3em;
+	font-size: 1.8em;
 }
 
 /*----------------------------------
@@ -60,11 +61,14 @@ Headings
 h1,
 h2,
 h3 {
-	font-size: 4em;
 	font-weight: 300;
 	word-spacing: 3px;
 	letter-spacing: 4px;
 	text-transform: uppercase;
+}
+
+h1 {
+	font-size: 3.8em;
 }
 
 h2 {
@@ -83,8 +87,8 @@ h2:after {
 	margin-top: 1em;
 }
 
-h3{
-	font-size: 3em;
+h3 {
+	font-size: 2.5em;
 }
 
 /*----------------------------------
@@ -94,9 +98,30 @@ HEADER AND NAVIGATION
 	width: 100%;
 }
 
-.logo {
-  width: 5.5em;
-  animation: spin 2s infinite;
+.navbar {
+	font-size: 1.6em;
+	background-color: #000;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	padding-bottom: 2em;
+	position: fixed;
+	z-index: 10;
+	width: 100%;
+}
+
+.main-nav {
+	list-style-type: none;
+	display: none;
+}
+
+.main-nav li {
+	text-align: center;
+	margin: 1.5em auto;
+}
+
+.img-logo {
+  width: 3.3em;
+	animation: spin 2s infinite;
+	display: inline-block;
 }
 
 @keyframes spin {
@@ -105,37 +130,47 @@ HEADER AND NAVIGATION
 	}
 }
 
-.main-nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  list-style: none;
-	padding: 0.5em;
-	width: 100%;
-	position: fixed;
-	z-index: 10;
-	background-color: #000;
+.brand {
+	padding-left: 0.8em;
+	padding-top: 0.8em;
 }
 
-.brand-name a,
+.logo {
+	display: inline-block;
+	font-size: 1.5em;
+	font-style: italic;
+}
+
+.navbar-toggle {
+	position: absolute;
+	top: 1.5em;
+	right: 1.5em;
+	cursor: pointer;
+	color: rgba(255, 255, 255, 0.9);
+	font-size: 1.6em;
+}
+
+.active {
+	display: block;
+}
+
 .nav-link a {
   text-decoration: none;
 	text-transform: uppercase;
-	font-size: 1.7em;
+	font-size: 1.5em;
   padding: 1em;
 	cursor: pointer;
 	color: #fff;
 }
 
-.brand-name a:hover,
-.nav-link a:hover {
-	color: #df744a;
+.brand a {
+	color: rgba(255, 255, 255, 0.9);
+	text-decoration: none;
 }
 
-.brand-name a {
-  font-size: 2.3em;
-	padding: 0;
-	font-style: italic;
+.brand a:hover,
+.nav-link a:hover {
+	color: #df744a;
 }
 
 .hero-container {
@@ -173,20 +208,19 @@ Photo by julian mora on Unsplash
   margin: 2em;
   border: 0;
 	cursor: pointer;
-  border: 0;
 	box-shadow: 5px 5px 5px rgba(0, 0, 0,0.5);
+	display: inline-block;
 }
 
 #hero-btn {
 	background-color: #df744a;
   border-radius: 8px;
   color: #fff;
-  font-size: 2em;
+  font-size: 1.8em;
 	padding: 0.8em;
   margin-top: 2em;
   border: 0;
 	cursor: pointer;
-  border: 0;
 	box-shadow: 5px 5px 5px rgba(0, 0, 0,0.5);
 }
 
@@ -194,7 +228,7 @@ Photo by julian mora on Unsplash
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 4em;
+  font-size: 3.5em;
   color: #fff;
   animation: MoveUpDown 1s linear infinite;
 }
@@ -224,24 +258,24 @@ ABOUT SECTION
 
 .about-image {
 	border-radius: 50%;
-	height: 20em;
+	width: 20em;
 }
 
 #video {
 	margin-top: 5em;
+	width: 38em;
+	padding: 2em;
 }
 
 /*----------------------------------
 GALLERY SECTION
 ------------------------------------*/
 
-.section-gallery {
+.gallery {
 	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	flex-wrap: wrap;
+	flex-flow: row wrap;
 	justify-content: space-around;
+	align-items: center;
 }
 
 p > a {
@@ -256,7 +290,7 @@ p > a {
 }
 
 .figcaption-gallery {
-	font-size: 1.8em;
+	font-size: 1.7em;
 }
 
 /*----------------------------------
@@ -265,24 +299,22 @@ SHOP SECTION
 .section-shop {
 	background-color: #fedcd2;
 	text-align: center;
-	padding: 3em;
+	padding: 2em;
 }
 
 .visit-shops {
 	display: flex;
+	flex-direction: column;
 	justify-content: space-around;
 	align-items: center;
-	padding: 4em;
+	padding: 6em 2em;
 }
 
 .visit-shops a {
-  font-size: 2.2em;
+  font-size: 2em;
   background-color: #df744a;
-  color: #fff;
-}
-
-.etsy {
-	max-width: 40%;
+	color: #fff;
+	display: inline-block;
 }
 
 .etsy i,
@@ -295,8 +327,8 @@ SHOP SECTION
 	font-size: 1.2em;
 }
 
-.you-tube {
-	max-width: 40%;
+.youtube {
+	margin-top: 4em;
 }
 
 /*----------------------------------
@@ -310,7 +342,7 @@ Contact Form
 	flex-direction: column;
 	align-items: center;
 	margin: 0 auto;
-	min-width: 50em;
+	max-width: 38em;
 	padding: 2em;
 	box-shadow: 7px 7px 7px #ddd;
 }
@@ -323,7 +355,7 @@ Contact Form
 }
 
 .form-input {
-	min-width: 15em;
+	max-width: 15em;
 	padding: 0.4em;
 }
 
@@ -351,7 +383,7 @@ Contact Form
 	background-color: #df744a;
   border-radius: 4px;
   color: white;
-  font-size: 1.8em;
+  font-size: 1.6em;
 	padding: 0.8em;
   margin: 1em;
   border: 0px solid;
@@ -378,139 +410,57 @@ Footer
 }
 
 .footer-links a {
-	font-size: 2em;
+	font-size: 1.8em;
 	padding: 1em;
 	color: #df744a;
 }
 
 .footer-paragraphs {
-	font-size: 1.7em;
+	font-size: 1.6em;
 	margin-bottom: 0.5em;
 }
 
 #back-to-top {
   position: absolute;
   bottom: 20px;
-  right: 20px;
+	right: 20px;
 }
 
 #back-to-top a {
-  color: #df744a;
+	color: #df744a;
+}
+
+#back-to-top i {
+	font-size: 2.5em;
 }
 
 /*----------------------------------
 Media Queries
 ------------------------------------*/
 
-/*----------------------------------
-Tablets
-------------------------------------*/
-
-@media screen and (max-width: 830px) {
-	/* Headings */
-	h1,
-	h2,
-	h3 {
-		font-size: 2.5em;
-		font-weight: 300;
-		word-spacing: 3px;
-		letter-spacing: 4px;
-	}
-
-	h2 {
-		font-size: 2em;
-	}
-
-	h3{
-		font-size: 2em;
-	}
-
-	.section {
-		margin: 4em auto;
-		max-width: 100%;
-		padding: 3em;
-	}
-
-	.text {
-		margin: 1.5em 0;
-		font-size: 1.8em;
-	}
-
-		/* Header */
-	.logo {
-		width: 4em;
-	}
-
-	/* Nav */
-	.brand-name a,
-	.nav-link a {
-		font-size: 1.5em;
-	}
-
-	.brand-name a {
-		font-size: 1.8em;
-	}
-
-	.hero-text-box {
-		font-size: 1.8em;
-		max-width: 100%;
-	}
-
-	#hero-btn {
-		font-size: 1.6em;
-	}
-
-	.scroll-down {
-		font-size: 3em;
-	}
-
-	/* About Section */
-	.about-image {
-		height: 13em;
-	}
-
-	#video {
-		width: 50em;
-	}
-
-	/* Gallery Section */
-	.section-gallery {
-		margin: 3em auto;
-		text-align: center;
-		width: 100%;
-	}
-
-	/* Shop Section */
-	.visit-shops {
+@media screen and (min-width: 850px) {
+	.navbar {
 		display: flex;
-		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		padding: 0.5em;
 	}
 
-	.etsy {
-		max-width: 80%;
-		margin-bottom: 4em;
+	.main-nav {
+		display: flex;
+		margin-right: 3em;
+		flex-direction: row;
 	}
 
-	.you-tube {
-		max-width: 80%;
-		margin-bottom: 4em;
+	.main-nav li {
+		margin: 0;
 	}
 
-	.visit-shops a {
-		font-size: 1.5em;
+	.nav-links {
+		margin-left: 4em;
 	}
 
-	.etsy i,
-	.you-tube i {
-		color: #df744a;
-		font-size: 1.2em;
-	}
-
-	.etsy i {
-		font-size: 1em;
-	}
-
-	#back-to-top i {
-		font-size: 2.3em;
+	.navbar-toggle {
+		display: none;
 	}
 }
