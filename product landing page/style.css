@@ -335,6 +335,11 @@ SHOP SECTION
 Contact Form
 ------------------------------------*/
 
+.section-form {
+	width: 100%;
+	padding: 0;
+}
+
 .form-container {
 	border: 1px solid #ddd;
 	border-radius: 0.8em;
@@ -342,8 +347,8 @@ Contact Form
 	flex-direction: column;
 	align-items: center;
 	margin: 0 auto;
-	max-width: 38em;
-	padding: 2em;
+	max-width: 36em;
+	padding: 0.5em;
 	box-shadow: 7px 7px 7px #ddd;
 }
 
@@ -378,7 +383,6 @@ Contact Form
 }
 
 /* Submit Button */
-
 .submit {
 	background-color: #df744a;
   border-radius: 4px;
@@ -438,7 +442,9 @@ Footer
 Media Queries
 ------------------------------------*/
 
-@media screen and (min-width: 850px) {
+/* LAPTOPS */
+
+@media screen and (min-width: 800px) {
 	.navbar {
 		display: flex;
 		justify-content: space-around;
@@ -462,5 +468,109 @@ Media Queries
 
 	.navbar-toggle {
 		display: none;
+	}
+
+	#video {
+		width: 45em;
+	}
+
+	/* CONTACT FORM */
+	.section-form {
+		width: 100%;
+		padding: 2em;
+	}
+
+	.form-container {
+		min-width: 50em;
+		padding: 2em;
+	}
+}
+
+/*----------------------------------
+Desktops
+------------------------------------*/
+@media screen and (min-width: 980px) {
+	.section {
+		width: 60%;
+		padding: 4em;
+	}
+
+	#video {
+		height: 40em;
+		width: 70em;
+	}
+
+	.text {
+		font-size: 2.5em;
+	}
+
+	h1 {
+		font-size: 4em;
+	}
+
+	h2 {
+		font-size: 3.4em;
+	}
+
+	h3 {
+		font-size: 3em;
+	}
+
+	/* SECTION GALLERY */
+	.section-gallery {
+		width: 80%;
+	}
+
+	.gallery-img {
+		max-width: 34em;
+	}
+
+	/* SHOP SECTION */
+	.visit-shops {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+
+	.etsy {
+		max-width: 45%;
+	}
+
+	.you-tube {
+		max-width: 45%;
+	}
+
+	.etsy i,
+	.you-tube i {
+		font-size: 1.8em;
+	}
+
+	.etsy i {
+		font-size: 1.4em;
+	}
+
+	/* CONTACT FORM */
+
+	.section-form {
+		width: 100%;
+	}
+
+	.form-container {
+		min-width: 90em;
+	}
+
+	/* Submit Button */
+	.submit {
+		font-size: 2em;
+	}
+
+	/* FOOTER */
+
+	.footer-links a {
+		font-size: 2em;
+	}
+
+	#back-to-top i {
+		font-size: 3.5em;
 	}
 }
