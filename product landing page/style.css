@@ -194,11 +194,12 @@ Photo by julian mora on Unsplash
 }
 
 .hero-text-box {
-	font-size: 2em;
+	font-size: 1.6em;
 	color: #fff;
 	padding: 2em;
 }
 
+#hero-btn,
 .btn {
 	background-color: #df744a;
   border-radius: 8px;
@@ -210,19 +211,6 @@ Photo by julian mora on Unsplash
 	cursor: pointer;
 	box-shadow: 5px 5px 5px rgba(0, 0, 0,0.5);
 	display: inline-block;
-}
-
-#hero-btn {
-	display: inline-block;
-	background-color: #df744a;
-  border-radius: 8px;
-  color: #fff;
-  font-size: 1.8em;
-	padding: 0.8em;
-  margin: 2.5em;
-  border: 0;
-	cursor: pointer;
-	box-shadow: 5px 5px 5px rgba(0, 0, 0,0.5);
 }
 
 .scroll-down {
