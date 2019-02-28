@@ -25,3 +25,60 @@ body {
 	font-family: 'Open Sans', Arial, sans-serif;
 	line-height: 1.5;
 }
+
+/*----------------------------------
+NAVIGATION
+------------------------------------*/
+
+.navbar {
+/* 	font-size: 1.6rem; */
+	background-color: #7bafd4;
+	position: fixed;
+	left: 0;
+	width: 70%;
+	border-right: solid 4px rgba(92, 91, 91, 0.2);
+	overflow-y: auto;
+	z-index: 11;
+}
+
+.main-nav {
+	list-style-type: none;
+	display: none;
+}
+
+.main-nav li {
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	font-size: 1.3rem;
+}
+
+.navbar-toggle {
+	display: flex;
+	position: fixed;
+	top: 0;
+	right: 0;
+	cursor: pointer;
+	background-color: #56a0d3;
+	color: #000;
+	font-size: 1.8rem;
+	padding: 2rem;
+	border: none;
+}
+
+.ul-header {
+	display: none;
+	color: #000;
+}
+
+.active {
+	display: block;
+}
+
+.nav-link {
+  text-decoration: none;
+  padding: 0.4rem;
+	cursor: pointer;
+	color: #000;
+}
