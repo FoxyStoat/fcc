@@ -148,3 +148,65 @@ code {
   border-radius: 5px;
 	overflow-x: auto;
 }
+
+/*-------------------------------------------------
+Media Queries
+-------------------------------------------------*/
+
+/*----------------------------------
+Tablets & Desktops
+------------------------------------*/
+@media screen and (min-width: 850px) {
+
+	.navbar-toggle {
+		display: none;
+	}
+
+	.navbar {
+		position: fixed;
+		overflow-y: auto;
+		width: 20%;
+		height: 100%;
+		left: 0;
+}
+
+	.main-nav li {
+		font-size: 1.6rem;
+		text-align: center;
+		margin: 1.5rem auto;
+		padding: 0.6rem;
+		color: #000;
+		border-bottom: 1px solid #eee;
+	}
+
+	.main-nav {
+		display: flex;
+		flex-direction: column;
+	}
+
+
+.ul-header {
+	font-size: 1.3rem;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+	nav > ul {
+		margin-top: 3rem;
+}
+
+
+	.main {
+		width: 80%;
+		position: absolute;
+		right: 0;
+	}
+
+	h1 {
+		font-size: 3rem;
+		margin-top: 2rem;
+	}
+}
