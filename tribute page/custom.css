@@ -1,0 +1,39 @@
+body {
+  background: url(http://www.sportsystem.info/immagini_Sport_System_CATALOGO_prodotti_Big_2014/S05236_SportSystem_Big.png);
+  background-position: center;
+  font-family: 'Lato', 'Arial', sans-serif;
+}
+
+h2 {
+  font-weight: 300;
+}
+
+.thumbnail {
+  margin: 0 15%;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  margin: 10px;
+  border-radius: 6%;
+}
+
+hr {
+  width: 50%;
+  border-top: 1px solid #f8f8f8;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+ul {
+  display: inline-block;
+/*   list-style-type :none; */
+  }
+
+li {
+  margin: 10px 0;
+}
+
+.maintext {
+  margin: 0 15%;
+}
